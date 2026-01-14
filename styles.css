@@ -1,0 +1,59 @@
+body {
+  background-color: #0b5c2d;
+  font-family: Georgia, serif;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Card base */
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  height: 180px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Suit colors */
+.red {
+  color: #c40000;
+}
+
+.black {
+  color: #000;
+}
+
+/* Card sections */
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  gap: 6px;
+}
